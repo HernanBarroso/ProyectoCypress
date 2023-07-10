@@ -1,0 +1,27 @@
+{
+  "name": "carrito_de_compras",
+  "version": "1.0.0",
+  "description": "automatizar carrito de compras en Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test-smoke": "cypress run --env grep=\"Smoke\"",
+    "test-regression": "cypress run --env grep=\"Regression\"",
+    "test-sprint": "cypress run --env grep=\"Sprint\"",
+    "test-tag-smoke": "cypress run --env grepTags=\"Smoke\"",
+    "test-tag-regression": "cypress run --env grepTags=\"Regression\""
+  },
+  "author": "Hernan Barroso",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^3.1.5",
+    "@types/jest": "^29.5.1",
+    "cypress": "^12.11.0",
+    "jest": "^29.5.0",
+    "jest-runner-groups": "^2.2.0",
+    "node-xlsx": "^0.23.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
