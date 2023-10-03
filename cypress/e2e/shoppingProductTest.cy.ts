@@ -17,6 +17,10 @@ describe('Set of test cases to add products to cart', function() {
     }) 
   })
 
+  it('should display an error message when login fails', function() {
+    loginPageCy.verifyErrorMessageOnLogin()
+  })
+
   it('add several products to cart', { tags: 'Smoke'}, function() {
     cy.fixture('products').then((data) => {
       productPageCy.addProductsToCart(data.products) 
